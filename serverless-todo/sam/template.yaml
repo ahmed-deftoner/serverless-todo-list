@@ -28,7 +28,7 @@ Resources:
     Properties:
       CodeUri: src/auth
       Handler: app.handler
-      
+
   CreateTaskFunction:
     Type: AWS::Serverless::Function
     Properties:
@@ -172,7 +172,7 @@ Resources:
           - ServerSideEncryptionByDefault:
               SSEAlgorithm: AES256
 
-   TasksTable:
+  TasksTable:
      Type: AWS::DynamoDB::Table
      Properties:
        AttributeDefinitions:
